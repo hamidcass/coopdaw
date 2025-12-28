@@ -12,6 +12,7 @@ pip install uvicorn fastapi supabase dotenv
 
 ```
 npm install
+npm install react-router-dom
 ```
 
 ## Run

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Dashboard } from './pages/Dashboard'
 
 import './App.css'
 import { TestConnection } from './components/TestConnection'
@@ -13,10 +14,11 @@ function App() {
         <Routes>
 
           <Route path="/" element={<h1>Hello, World!</h1>} />
+          <Route path='/dash' element={<Dashboard />}></Route>
 
         </Routes>
       </BrowserRouter>
-      <TestConnection />;
+      {/* <TestConnection />; */}
     </>
   )
 }
