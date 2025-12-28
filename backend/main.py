@@ -34,7 +34,7 @@ def test():
 @app.get("/test-db")
 def test_database():
     try:
-        # Test query - replace 'your_table' with an actual table name
+       
         response = supabase.table('test_table').select("*").limit(1).execute()
         return {"status": "Database connected!", "data": response.data}
     except Exception as e:
